@@ -1,0 +1,12 @@
+Flow Signal Local Traffic Config
+============================================
+
+docker run -it -d \
+  --name flowsignal \
+  --network web \
+  --restart always \
+  -p 6109:80 \
+  -p 8109:8000 \
+  -v /home/sys/config:/home/sys/config \
+  -v /home/sys/certs:/home/sys/certs \
+   damotiva/flowsignal:latest

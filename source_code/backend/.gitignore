@@ -1,0 +1,6 @@
+.env
+venv
+venv/*
+tickets_gen/generated/*
+backend/__pycache__
+backend/ticketing/__pycache__

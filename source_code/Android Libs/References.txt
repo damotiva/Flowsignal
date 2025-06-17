@@ -1,0 +1,30 @@
+Android Server App
+======================================
+https://github.com/Lekky71/android-server-app/
+
+
+Android Server App
+======================================
+https://medium.com/hacktive-devs/creating-a-local-http-server-on-android-49831fbad9ca
+
+
+Android Http Server
+======================================
+https://github.com/piotrpolak/android-http-server
+
+
+Receive Server Post in Java
+======================================
+https://stackoverflow.com/questions/48533498/how-to-recieve-a-server-post-in-java-on-a-specific-port/48534280
+
+
+Connect Bluestacks to from another Android Studio Running PC
+======================================
+
+https://stackoverflow.com/questions/30962481/adb-bluestacks-connect-2-pc
+
+trivial_portforward.exe 9999 127.0.0.1 5555
+//usage: portforward [port to listen on] [ip of host to connect to] [port to connect to].
+
+adb connect 192.168.1.4:9999 
+

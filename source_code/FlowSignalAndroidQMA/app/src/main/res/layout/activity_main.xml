@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight=".20"
+            android:orientation="horizontal">
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+        <LinearLayout
+            android:text="left"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".80"
+            android:orientation="vertical">
+
+            <VideoView
+                android:id="@+id/videoPlayeVideoView"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight=".8"/>
+
+
+            <ImageView
+                android:text="left"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight=".8"
+                android:background="@drawable/bbc_test_img"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight=".0"
+                android:background="@color/green">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:background="@android:color/white"
+                    android:layout_alignParentTop="true" />
+
+                <TextView
+                    android:id="@+id/welcomeTextview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp"
+                    android:text="WELCOME UWATA HOSPITAL"
+                    android:textColor="@color/white"
+                    android:textSize="26dp" />
+
+                <TextView
+                    android:id="@+id/welcomeDayDateTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/welcomeTextview"
+                    android:paddingLeft="16dp"
+                    android:paddingBottom="16dp"
+                    android:text="Thursday - 5th October 2023"
+                    android:textColor="@color/white"
+                    android:textSize="16dp" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/ticketRelativeLayout"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".30"
+                android:background="@color/green"
+                android:layout_gravity="center">
+
+                <View
+                    android:id="@+id/ticketLeftBorderView"
+                    android:layout_width="5dp"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/white"
+                    android:layout_alignParentLeft="true" />
+
+                <TextView
+                    android:id="@+id/ticketTitleTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:layout_marginTop="32dp"
+                    android:textSize="26dp"
+                    android:text="TICKET"/>
+
+                <TextView
+                    android:id="@+id/ticketCodeTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ticketTitleTextView"
+                    android:layout_marginTop="28dp"
+                    android:gravity="center"
+                    android:text="A123"
+                    android:textColor="@color/white"
+                    android:textSize="36dp" />
+
+                <TextView
+                    android:id="@+id/ticketGoTitleTextView"
+                    android:layout_below="@+id/ticketCodeTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:layout_marginTop="32dp"
+                    android:textSize="26dp"
+                    android:text="ELEKEA"/>
+
+                <TextView
+                    android:id="@+id/ticketLocationTextView"
+                    android:layout_below="@+id/ticketGoTitleTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginTop="28dp"
+                    android:textColor="@color/white"
+                    android:textSize="36dp"
+                    android:text="MAABARA"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
