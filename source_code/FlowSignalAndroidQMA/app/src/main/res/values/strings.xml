@@ -1,4 +1,4 @@
 <resources>
-    <string name="app_name">Uwata Hospital - QMA</string>
-    <string name="uwata_hospital">Uwata Hospital Queue Management App</string>
+    <string name="app_name">Flow Signal</string>
+    <string name="app_description">Flow Signal - Queue Management Mobile App</string>
 </resources>
